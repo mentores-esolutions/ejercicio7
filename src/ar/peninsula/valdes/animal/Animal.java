@@ -16,7 +16,7 @@ public abstract class Animal {
 		if (getAnios(edadMeses) > this.getPeriodoCrecimiento()) {
 			tamanio = this.getPeriodoCrecimiento() * this.getPromedioCrecimientoAnual();
 		} else {
-			tamanio += getAnios(edadMeses) * this.getPromedioCrecimientoAnual();
+			tamanio = getAnios(edadMeses) * this.getPromedioCrecimientoAnual();
 		}
 		return tamanio;
 	}
