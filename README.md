@@ -6,7 +6,9 @@ En Península Valdés existen 2 Pingüinos llamados Florencia y Néstor y 2 delf
 Fernando, el guarda parque de la reserva, quiere saber qué sucedería si hicieran una carrera Néstor y Mariano. Por ello, está solicitando un programa que determine quien ganaría la carrera si la misma tuviera 2 metas diferentes.
 1.	Punto de llegada 1 – 4km
 2.	Punto de llegada 2 – 10km
+
 Para ello es necesario:
+
 1.	Crear una clase Delfín con las siguientes características:
 	1.a.	Es un animal acuático
 	1.b.	Es un animal vivíparo
