@@ -1,4 +1,5 @@
 package ar.peninsula.valdes.animal;
+
 public abstract class Animal {
 
 	protected int periodoCrecimiento;
