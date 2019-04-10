@@ -12,9 +12,13 @@ Para ello es necesario:
 1.	Crear una clase Delfín con las siguientes características:
 
 	a.	Es un animal acuático
+	
 	b.	Es un animal vivíparo
+	
 	c.	Crear variables que determinen que 
+	
 		i.	Velocidad promedio desplazamiento en agua = 8 km/h. El valor debe poder consultarse sin crear una instancia de la clase y es un valor constante.
+		
 	d.	Modificar método desplazarse para calcular el desplazamiento en el tiempo, considerando la velocidad promedio en mar
 	
 2.	Crear una clase Pingüino con las siguientes características:
