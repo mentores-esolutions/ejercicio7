@@ -19,7 +19,7 @@ public class Main {
 		Animal pinguinoFlor = new Pinguino("Florencia", 5, 0.24f, 2,10f, 3f);
 		Animal pinguinoNes = new Pinguino("Néstor", 5, 0.24f, 2,10f, 3f);
 
-        System.out.println("----------------------------------------------------------------\n\n");
+        System.out.println("-----------------------------------------------------------------\n\n");
 
 
 
@@ -36,7 +36,7 @@ public class Main {
         else
             System.out.println("Ganador 10K: " + pinguinoNes.getNombre());
 
-        System.out.println("----------------------------------------------------------------\n\n");
+        System.out.println("-----------------------------------------------------------------\n\n");
 
 
 
@@ -48,7 +48,7 @@ public class Main {
         animales.add(pinguinoFlor);
         animales.add(pinguinoNes);
 
-        System.out.println("----------------------------------------------------------------\n\n");
+        System.out.println("-----------------------------------------------------------------\n\n");
 
 
 
@@ -59,16 +59,14 @@ public class Main {
             System.out.println("El animal es: " + animal.getClass().getInterfaces()[0].getSimpleName() + "\n");
         }
 
-        System.out.println("----------------------------------------------------------------\n\n");
+        System.out.println("-----------------------------------------------------------------\n\n");
 
 
 
         System.out.println("-------------------------  Ejercicio 9  -------------------------");
 
-        for (Animal animal: animales){
+        //animales.sort();
 
-        }
-
-        System.out.println("----------------------------------------------------------------\n\n");
+        System.out.println("-----------------------------------------------------------------\n\n");
 	}
 }
