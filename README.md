@@ -2,10 +2,11 @@
 
 Consignas
 
-En Península Valdés existen 2 Pingüinos llamados Florencia y Néstor y 2 delfines llamados Laura y Mariano que son muy competitivos.
-Fernando, el guarda parque de la reserva, quiere saber qué sucedería si hicieran una carrera Néstor y Mariano. Por ello, está solicitando un programa que determine quien ganaría la carrera si la misma tuviera 2 metas diferentes.
-1.	Punto de llegada 1 – 4km
-2.	Punto de llegada 2 – 10km
+Fernando, el guardaparque de la reserva, quiere saber qué sucedería si hicieran una carrera Néstor y Mariano. 
+Por ello, está solicitando un programa que determine quién ganaría la carrera si la misma tuviera 2 tiempo de carrera diferentes.
+1.	Tiempo de carrera 1 – 30 minutos
+2.	Tiempo de carrera 2 – 2 horas
+
 
 Para ello es necesario:
 
@@ -38,6 +39,7 @@ Para ello es necesario:
 	e.	Modificar método desplazarse para calcular el desplazamiento en el tiempo, considerando las velocidades promedio en tierra y mar. Asumiendo que pasa el 30 % del tiempo en el agua y el resto en la tierra
 	
 3.	En el método Main, crear los 4 animales.
+	
 	a.	El periodo en que crece un delfín es de 6 meses y crece un promedio de 0.25m por año 
 	
 	b.	El periodo de gestación de un delfin es de 9 meses
@@ -50,11 +52,11 @@ Para ello es necesario:
 	
 	f.	El tamaño inicial del pingüino es de 0,1 metros
 
-4.	Determinar cuál de los 2 machos ganaría la carrera:
-
-	a.	En el punto de llegada 1
+4.	Determinar cuál de los 2 machos ganaría la carrera legando más lejos:
 	
-	b.	En el punto de llegada 2
+	a.	Transcurrido el tiempo 1 – 30 minutos
+
+	b.	Transcurrido el tiempo 2 – 2 horas
 	
 5.	Crear un ArrayList de tipo Animal y guarde en ella los animales creados
 6.	Crear los métodos estaGestando / estaIncubando, según corresponda, en las clases Oviparo y Viviparo cuyos retornos sean boolean
