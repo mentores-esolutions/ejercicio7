@@ -38,6 +38,18 @@ Para ello es necesario:
 	e.	Modificar método desplazarse para calcular el desplazamiento en el tiempo, considerando las velocidades promedio en tierra y mar. Asumiendo que pasa el 30 % del tiempo en el agua y el resto en la tierra
 	
 3.	En el método Main, crear los 4 animales.
+	a.	El periodo en que crece un delfín es de 6 meses y crece un promedio de 0.25m por año 
+	
+	b.	El periodo de gestación de un delfin es de 9 meses
+	
+	c.	El tamaño inicial del delfin es de 0,7 metros
+	
+	d.	El periodo en que crece un pingüino es de 5 meses y crece un promedio de 0.24m por año
+	
+	e.	El periodo en que incuba el pingüino es de 2 meses
+	
+	f.	El tamaño inicial del pingüino es de 0,1 metros
+
 4.	Determinar cuál de los 2 machos ganaría la carrera:
 
 	a.	En el punto de llegada 1
@@ -45,8 +57,8 @@ Para ello es necesario:
 	b.	En el punto de llegada 2
 	
 5.	Crear un ArrayList de tipo Animal y guarde en ella los animales creados
-6.	Crear los métodos estaGestando / estaIncubando según corresponda si son ovíparos o vivíparos cuyos retornos sean boolean
-7.	Recorrer la lista de animales e imprimir en consola el nombre del mismo y decir si es un Oviparo o un Viviparo
+6.	Crear los métodos estaGestando / estaIncubando, según corresponda, en las clases Oviparo y Viviparo cuyos retornos sean boolean
+7.	Recorrer la lista de animales e imprimir en consola el nombre y decir si es un Oviparo o un Viviparo
 8.	Implemente el método calcularTamanio de la clase Pingüino y Delfín
 
 	a.	En cada método hay que considerar que si la edad es menor al tiempo de incubación/gestación el tamaño debe ser cero. Caso contrario calcular el tamaño según la proporción de crecimiento anual
