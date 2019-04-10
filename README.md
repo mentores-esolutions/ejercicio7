@@ -2,6 +2,8 @@
 
 Consignas
 
+En Península Valdés existen 2 Pingüinos llamados Florencia y Néstor y 2 delfines llamados Laura y Mariano que son muy competitivos.
+
 Fernando, el guardaparque de la reserva, quiere saber qué sucedería si hicieran una carrera Néstor y Mariano. 
 Por ello, está solicitando un programa que determine quién ganaría la carrera si la misma tuviera 2 tiempo de carrera diferentes.
 1.	Tiempo de carrera 1 – 30 minutos
