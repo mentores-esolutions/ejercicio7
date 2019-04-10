@@ -10,11 +10,13 @@ Fernando, el guarda parque de la reserva, quiere saber qué sucedería si hicier
 Para ello es necesario:
 
 1.	Crear una clase Delfín con las siguientes características:
-	1.a.	Es un animal acuático
-	1.b.	Es un animal vivíparo
-	1.c.	Crear variables que determinen que 
-		1.c.i.	Velocidad promedio desplazamiento en agua = 8 km/h. El valor debe poder consultarse sin crear una instancia de la clase y es un valor constante.
-	1.d		Modificar método desplazarse para calcular el desplazamiento en el tiempo, considerando la velocidad promedio en mar
+
+	a.	Es un animal acuático
+	b.	Es un animal vivíparo
+	c.	Crear variables que determinen que 
+		i.	Velocidad promedio desplazamiento en agua = 8 km/h. El valor debe poder consultarse sin crear una instancia de la clase y es un valor constante.
+	d.	Modificar método desplazarse para calcular el desplazamiento en el tiempo, considerando la velocidad promedio en mar
+	
 2.	Crear una clase Pingüino con las siguientes características:
 	a.	Es un animal terrestre y acuático
 	b.	Es un animal ovíparo
