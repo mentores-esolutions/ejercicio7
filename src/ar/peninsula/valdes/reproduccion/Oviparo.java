@@ -10,6 +10,7 @@ public abstract class Oviparo extends Animal {
 	 */
 
 	private int tiempoIncubacion;
+    protected boolean estaIncubando;
 
 	public Oviparo(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual, int tiempoIncubacion) {
 		super(nombre, periodoCrecimiento, promedioCrecimientoAnual);
@@ -23,4 +24,9 @@ public abstract class Oviparo extends Animal {
 	public void setTiempoIncubacion(int tiempoIncubacion) {
 		this.tiempoIncubacion = tiempoIncubacion;
 	}
+
+	// punto 6
+	public boolean estaIncubando(){
+	    return this.estaIncubando;
+    }
 }

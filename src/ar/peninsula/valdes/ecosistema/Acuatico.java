@@ -1,5 +1,5 @@
 package ar.peninsula.valdes.ecosistema;
 public interface Acuatico {
 
-    float nadar(int tiempoMinuto);
+    float nadar(float kilometros);
 }
