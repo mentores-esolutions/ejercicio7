@@ -13,12 +13,12 @@ import ar.peninsula.valdes.reproduccion.Viviparo;
 public class Main {
 
 	/*
-	 * a. El periodo en que crece un delfín es de 6 meses y crece un promedio de
-	 * 0.25m por año b. El periodo de gestación de un delfin es de 9 meses c. El
-	 * tamaño inicial del delfin es de 0,7 metros d. El periodo en que crece un
-	 * pingüino es de 5 meses y crece un promedio de 0.24m por año e. El periodo
-	 * en que incuba el pingüino es de 2 meses f. El tamaño inicial del pingüino
-	 * es de 0,1 metros
+	 * a. El periodo en que crece un delfín es de 6 meses y crece un promedio de 0.25m por año 
+	 * b. El periodo de gestación de un delfin es de 9 meses 
+	 * c. El tamaño inicial del delfin es de 0,7 metros 
+	 * d. El periodo en que crece un pingüino es de 5 meses y crece un promedio de 0.24m por año 
+	 * e. El periodo en que incuba el pingüino es de 2 meses 
+	 * f. El tamaño inicial del pingüino es de 0,1 metros
 	 */
 
 	public static void main(String[] args) {
