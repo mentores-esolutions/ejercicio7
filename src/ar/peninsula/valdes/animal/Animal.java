@@ -22,6 +22,9 @@ public abstract class Animal {
 	}
 
 	public abstract float desplazarse(int tiempoMinuto);
+	
+	public abstract boolean estaGestando();
+	public abstract boolean estaIncubando();
 
 	public abstract void calcularTamanio(int edadMeses);
 
