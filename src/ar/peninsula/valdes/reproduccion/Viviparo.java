@@ -12,8 +12,8 @@ public abstract class Viviparo extends Animal {
 
 	private int tiempoGestacion;
 
-	public Viviparo(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual, int tiempoGestacion) {
-		super(nombre, periodoCrecimiento, promedioCrecimientoAnual);
+	public Viviparo(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual,float tamanio, int tiempoGestacion) {
+		super(nombre, periodoCrecimiento, promedioCrecimientoAnual,tamanio);
 		this.tiempoGestacion = tiempoGestacion;
 	}
 
@@ -24,9 +24,18 @@ public abstract class Viviparo extends Animal {
 	public void setTiempoGestacion(int tiempoGestacion) {
 		this.tiempoGestacion = tiempoGestacion;
 	}
-	
-	public Boolean estaIncubando(int edadMeses) {
-		return true;
+		
+	public Boolean estaGestando(int edadMeses) {
+		boolean estaGestando=false;
+		if (edadMeses < tiempoGestacion)
+		{
+			estaGestando=true;
+		}
+		else 
+		{
+			estaGestando=false;
+		}
+		return estaGestando;
 	}
 
 }

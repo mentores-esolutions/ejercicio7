@@ -1,15 +1,16 @@
 package ar.peninsula.valdes.animal;
 
-public abstract class Animal {
+public abstract class Animal  {
 
 	protected int periodoCrecimiento;
 	protected float promedioCrecimientoAnual;
 	protected String nombre;
-
-	public Animal(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual) {
+    protected float tamanio;
+	public Animal(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual,float tamanio) {
 		this.nombre = nombre;
 		this.periodoCrecimiento = periodoCrecimiento;
 		this.promedioCrecimientoAnual = promedioCrecimientoAnual;
+		this.tamanio=tamanio;
 	}
 
 	public float getTamanio(int edadMeses) {
@@ -21,11 +22,24 @@ public abstract class Animal {
 		}
 		return tamanio;
 	}
+	
+	public float getTamanio() {
+		return tamanio;
+	}
+
+	public void setTamanio(float tamanio) {
+		this.tamanio = tamanio;
+	}
+
 
 	public abstract float desplazarse(int tiempoMinuto);
 
-	public abstract void calcularTamanio(int edadMeses);
 
+	public abstract void calcularTamanio(int edadMeses);
+	
+	public abstract float calcularTamaño (int edadMeses) ;
+	
+	
 	public int getAnios(int edadMeses) {
 		return edadMeses / 12;
 	}
@@ -53,4 +67,10 @@ public abstract class Animal {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+	@Override
+	public String toString() {
+		return "Animal [nombre=" + nombre + ", tamanio=" + tamanio + "]";
+	}
+	
 }

@@ -11,8 +11,8 @@ public abstract class Oviparo extends Animal {
 
 	private int tiempoIncubacion;
 
-	public Oviparo(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual, int tiempoIncubacion) {
-		super(nombre, periodoCrecimiento, promedioCrecimientoAnual);
+	public Oviparo(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual, float tamanio, int tiempoIncubacion) {
+		super(nombre, periodoCrecimiento, promedioCrecimientoAnual,tamanio);
 		this.tiempoIncubacion = tiempoIncubacion;
 	}
 	
@@ -24,7 +24,16 @@ public abstract class Oviparo extends Animal {
 		this.tiempoIncubacion = tiempoIncubacion;
 	}
 	
-	public Boolean estaGestando(int edadMeses) {
-		return true;
+	public Boolean estaIncubando(int edadMeses) {
+		boolean estaIncubando=false;
+		if (edadMeses < tiempoIncubacion)
+		{
+			estaIncubando=true;
+		}
+		else 
+		{
+			estaIncubando=false;
+		}
+		return estaIncubando;
 	}
 }
