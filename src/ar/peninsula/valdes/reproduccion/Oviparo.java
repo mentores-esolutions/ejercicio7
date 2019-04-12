@@ -23,4 +23,11 @@ public abstract class Oviparo extends Animal {
 	public void setTiempoIncubacion(int tiempoIncubacion) {
 		this.tiempoIncubacion = tiempoIncubacion;
 	}
+
+	public boolean estaIncubando(int meses){
+		if (meses <= tiempoIncubacion)
+			return true;
+		else
+			return false;
+	}
 }
