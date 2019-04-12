@@ -15,11 +15,11 @@ public class Main {
 
         System.out.println("Creamos los animales.");
 
-        Animal delfinLau = new Delfin("Laura", 6, 0.25f, 9);
-		Animal delfinMar = new Delfin("Mariano", 6, 0.25f, 9);
+        Delfin delfinLau = new Delfin("Laura", 6, 0.25f, 9);
+        Delfin delfinMar = new Delfin("Mariano", 6, 0.25f, 9);
 
-		Animal pinguinoFlor = new Pinguino("Florencia", 5, 0.24f, 2,10f, 3f);
-		Animal pinguinoNes = new Pinguino("Néstor", 5, 0.24f, 2,10f, 3f);
+        Pinguino pinguinoFlor = new Pinguino("Florencia", 5, 0.24f, 2,10f, 3f);
+        Pinguino pinguinoNes = new Pinguino("Néstor", 5, 0.24f, 2,10f, 3f);
 
         System.out.println("-----------------------------------------------------------------\n\n");
 
@@ -28,13 +28,13 @@ public class Main {
         System.out.println("-------------------------  Ejercicio 4  -------------------------");
 
         // carrera 30 minutos
-        if (((Delfin) delfinMar).desplazarse(30) > ((Pinguino) pinguinoNes).desplazarse(30))
+        if (delfinMar.desplazarse(30) > pinguinoNes.desplazarse(30))
             System.out.println("Ganador 30 minutos: " + delfinMar.getNombre());
         else
             System.out.println("Ganador 30 minutos: " + pinguinoNes.getNombre());
 
         // carrera 2 horas
-        if (((Delfin) delfinMar).desplazarse(120) > ((Pinguino) pinguinoNes).desplazarse(120))
+        if (delfinMar.desplazarse(120) > pinguinoNes.desplazarse(120))
             System.out.println("Ganador 2 horas: " + delfinMar.getNombre());
         else
             System.out.println("Ganador 2 horas: " + pinguinoNes.getNombre());

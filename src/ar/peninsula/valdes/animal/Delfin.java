@@ -6,7 +6,7 @@ import ar.peninsula.valdes.reproduccion.Viviparo;
 public class Delfin extends Viviparo implements Acuatico {
 
     // velocidad en Km/h
-    final static float velocidadPromedioDesplazamientoEnAgua = 8f;
+    public final static float velocidadPromedioDesplazamientoEnAgua = 8f;
     private float tamanioInicial = 0.7f;
     private float tamanio;
 
