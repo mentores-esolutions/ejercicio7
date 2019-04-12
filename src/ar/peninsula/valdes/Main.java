@@ -13,7 +13,9 @@ public class Main {
 
         System.out.println("-------------------------  Ejercicio 3  -------------------------");
 
-		Animal delfinLau = new Delfin("Laura", 6, 0.25f, 9);
+        System.out.println("Creamos los animales.");
+
+        Animal delfinLau = new Delfin("Laura", 6, 0.25f, 9);
 		Animal delfinMar = new Delfin("Mariano", 6, 0.25f, 9);
 
 		Animal pinguinoFlor = new Pinguino("Florencia", 5, 0.24f, 2,10f, 3f);
@@ -24,23 +26,26 @@ public class Main {
 
 
         System.out.println("-------------------------  Ejercicio 4  -------------------------");
-        // carrera 4K
-		if (((Delfin) delfinMar).nadar(4) < ((Pinguino) pinguinoNes).nadar(4))
-			System.out.println("Ganador 4K: " + delfinMar.getNombre());
-		else
-			System.out.println("Ganador 4K: " + pinguinoNes.getNombre());
 
-        // carrera 10K
-        if (((Delfin) delfinMar).nadar(10) < ((Pinguino) pinguinoNes).nadar(10))
-            System.out.println("Ganador 10K: " + delfinMar.getNombre());
+        // carrera 30 minutos
+        if (((Delfin) delfinMar).desplazarse(30) > ((Pinguino) pinguinoNes).desplazarse(30))
+            System.out.println("Ganador 30 minutos: " + delfinMar.getNombre());
         else
-            System.out.println("Ganador 10K: " + pinguinoNes.getNombre());
+            System.out.println("Ganador 30 minutos: " + pinguinoNes.getNombre());
+
+        // carrera 2 horas
+        if (((Delfin) delfinMar).desplazarse(120) > ((Pinguino) pinguinoNes).desplazarse(120))
+            System.out.println("Ganador 2 horas: " + delfinMar.getNombre());
+        else
+            System.out.println("Ganador 2 horas: " + pinguinoNes.getNombre());
 
         System.out.println("-----------------------------------------------------------------\n\n");
 
 
 
         System.out.println("-------------------------  Ejercicio 5  -------------------------");
+
+        System.out.println("Cargamos los animales en una lista.");
 
         List<Animal> animales = new ArrayList<>();
         animales.add(delfinLau);
@@ -63,9 +68,18 @@ public class Main {
 
 
 
-        System.out.println("-------------------------  Ejercicio 9  -------------------------");
+        System.out.println("-------------------------  Ejercicio 8  -------------------------");
 
-        //animales.sort();
+        for (Animal animal: animales){
+            animal.calcularTamanio(12);
+            System.out.println("Nombre: " + animal.getNombre() + ", tamaño: ");
+        }
+
+        System.out.println("-----------------------------------------------------------------\n\n");
+
+
+
+        System.out.println("-------------------------  Ejercicio 9  -------------------------");
 
         System.out.println("-----------------------------------------------------------------\n\n");
 	}
