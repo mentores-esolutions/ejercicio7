@@ -52,4 +52,6 @@ public abstract class Animal {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+	
 }
