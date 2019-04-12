@@ -20,13 +20,7 @@ public class Delfin extends Viviparo implements Acuatico {
 
 	@Override
 	public void calcularTamanio(int edadMeses) {
-		// TODO Auto-generated method stub
-		//a.	En cada método hay que considerar que si la edad es menor al tiempo de 
-		//incubación/gestación el tamaño debe ser cero. Caso contrario calcular el
-		//tamaño según la proporción de crecimiento anual
 		DecimalFormat formato = new DecimalFormat("0.00");
-		
-		
 		if (!super.estaGestando(edadMeses)) 
 		{
 			calcularTamaño(edadMeses);
@@ -35,7 +29,6 @@ public class Delfin extends Viviparo implements Acuatico {
 		else 
 		{
 			tamanio=0;
-			setTamanio(tamanio);
 			System.out.println("El tamaño del delfin no se puede definir porque esta gestandose con " + edadMeses + " meses de edad.");
 		}
 		
@@ -46,8 +39,8 @@ public class Delfin extends Viviparo implements Acuatico {
 	public float calcularTamaño (int edadMeses) {
 		//float crecimientoMesual=promedioCrecimientoAnual/12;
 		//tamanio=0.7f+(crecimientoMesual*(edadMeses - getTiempoGestacion()));
-		tamanio=getTamanio(edadMeses);
-		setTamanio(tamanio);
+		this.tamanio=getTamanio(edadMeses);
+		this.setTamanio(this.tamanio);
 		return tamanio;
 		
 	}

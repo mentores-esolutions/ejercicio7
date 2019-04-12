@@ -16,8 +16,8 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		Animal Nestor = new Pinguino("Nestor", 5, 0.24f,2, 0, 12, 4);
-		Animal Florencia = new Pinguino("Florencia", 5, 0.24f,2, 0, 12, 4);
+		Animal Nestor = new Pinguino("Nestor", 5, 0.24f,0, 2, 12, 4);
+		Animal Florencia = new Pinguino("Florencia", 5, 0.24f,0, 2, 12, 4);
 		Animal Laura = new Delfin("Laura", 6, 0.25f,0, 9);
 		Animal Mariano = new Delfin("Mariano", 6, 0.25f,0, 9);
 		List<Animal> listaAnimal = new ArrayList<>();
@@ -48,23 +48,30 @@ public class Main {
 		}
 		
 		System.out.println(" **** Punto 8 crecimiento de animales:  ****");
-		Laura.setTamanio(Laura.getTamanio(60));
-		Laura.calcularTamanio(60);
-		Mariano.setTamanio(Mariano.getTamanio(5));
-		Mariano.calcularTamanio(5);
-		Nestor.setTamanio(Nestor.getTamanio(60));
-		Nestor.calcularTamanio(60);
-		Florencia.setTamanio(Florencia.getTamanio(2));
-		Florencia.calcularTamanio(2);
+	     //	Laura.setTamanio(Laura.getTamanio(3));
+		Laura.calcularTamanio(3000);
+		//Mariano.setTamanio(Mariano.getTamanio(3));
+		Mariano.calcularTamanio(3000);
+		//Nestor.setTamanio(Nestor.getTamanio(3));
+		Nestor.calcularTamanio(3000);
+		//Florencia.setTamanio(Florencia.getTamanio(3));
+		Florencia.calcularTamanio(3000);
 
+		for (Animal animal : listaAnimal) {
+			animal.calcularTamaño(93);
+		}
+		
+		for (Animal animal : listaAnimal) {
+			System.out.println(" - "+ animal.getNombre() +" su tamaño es  "+animal.getTamanio());
+		}
 		
 		
 		
 		
 		System.out.println(" **** Punto 9 :  ****");
-		for(int x=0;x<listaAnimal.size();x++) {
-			  listaAnimal.get(x).calcularTamaño(3);
-			}
+		//for(int x=0;x<listaAnimal.size();x++) {
+		//	  listaAnimal.get(x).getTamanio(7);
+		//	}
 		
 		listaAnimal.sort(Comparator.comparing(Animal::getTamanio)
 				

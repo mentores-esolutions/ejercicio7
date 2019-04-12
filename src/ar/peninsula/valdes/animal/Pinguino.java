@@ -37,25 +37,18 @@ public class Pinguino extends Oviparo implements Acuatico, Terrestre {
 		DecimalFormat formato = new DecimalFormat("0.00");
 		if (!super.estaIncubando(edadMeses)) 
 		{
-			calcularTamaño(edadMeses);
-			System.out.println("El tamaño de un Pinguino de "+edadMeses+" meses es:"+ formato.format(tamanio)+" metros.");
+			this.tamanio=getTamanio(edadMeses);
+			System.out.println("El tamaño de un Pinguino de "+edadMeses+" meses es:"+ formato.format(this.tamanio)+" metros.");
 		}
 		else 
 		{
-			tamanio=0;
+			this.tamanio=0;
 			System.out.println("El tamaño del Pinguino no se puede definir porque esta incubando con " + edadMeses + " meses de edad.");
 		}
 		
 	}
 
-	public float calcularTamaño (int edadMeses) {
-		//float crecimientoMesual=promedioCrecimientoAnual/12;
-		//tamanio=0.7f+(crecimientoMesual*(edadMeses - getTiempoIncubacion()));
-		tamanio=getTamanio(edadMeses);
-		setTamanio(tamanio);
-		return tamanio;
-		
-	}
+	
 	public float getVelocidadAgua() {
 		return velocidadAgua;
 	}
@@ -79,6 +72,14 @@ public class Pinguino extends Oviparo implements Acuatico, Terrestre {
 		return tiempoDesplazamiento;
 	}
 
+	public float calcularTamaño (int edadMeses) {
+		//float crecimientoMesual=promedioCrecimientoAnual/12;
+		//tamanio=0.7f+(crecimientoMesual*(edadMeses - getTiempoGestacion()));
+		this.tamanio=getTamanio(edadMeses);
+		this.setTamanio(this.tamanio);
+		return tamanio;
+		
+	}
 
 
 

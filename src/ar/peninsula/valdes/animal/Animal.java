@@ -14,13 +14,16 @@ public abstract class Animal  {
 	}
 
 	public float getTamanio(int edadMeses) {
-		float tamanio = 0;
+		
 		if (getAnios(edadMeses) > this.getPeriodoCrecimiento()) {
-			tamanio = this.getPeriodoCrecimiento() * this.getPromedioCrecimientoAnual();
+			this.tamanio = this.getPeriodoCrecimiento() * this.getPromedioCrecimientoAnual();
+			setTamanio(tamanio);
+			
 		} else {
-			tamanio = getAnios(edadMeses) * this.getPromedioCrecimientoAnual();
+			this.tamanio = getAnios(edadMeses) * this.getPromedioCrecimientoAnual();
+			setTamanio(tamanio);
 		}
-		return tamanio;
+		return this.tamanio;
 	}
 	
 	public float getTamanio() {
@@ -28,17 +31,17 @@ public abstract class Animal  {
 	}
 
 	public void setTamanio(float tamanio) {
-		this.tamanio = tamanio;
+		this.tamanio=tamanio;
 	}
-
-
+	
+	
 	public abstract float desplazarse(int tiempoMinuto);
 
 
 	public abstract void calcularTamanio(int edadMeses);
 	
-	public abstract float calcularTamaño (int edadMeses) ;
-	
+	public abstract float calcularTamaño (int edadMeses);
+
 	
 	public int getAnios(int edadMeses) {
 		return edadMeses / 12;
