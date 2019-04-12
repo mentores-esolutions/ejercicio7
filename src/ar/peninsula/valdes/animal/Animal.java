@@ -1,15 +1,18 @@
 package ar.peninsula.valdes.animal;
-public abstract class Animal {
+public abstract class Animal implements Comparable<Animal> {
 
 	protected int periodoCrecimiento;
 	protected float promedioCrecimientoAnual;
 	protected String nombre;
+	protected float tamanioInicial;
+	protected float tamanioActual;
 
 	public Animal(String nombre, int periodoCrecimiento, float promedioCrecimientoAnual) {
 		this.nombre = nombre;
 		this.periodoCrecimiento = periodoCrecimiento;
 		this.promedioCrecimientoAnual = promedioCrecimientoAnual;
 	}
+
 
 	public float getTamanio(int edadMeses) {
 		float tamanio = 0;
@@ -52,4 +55,35 @@ public abstract class Animal {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+
+	@Override
+	public int compareTo(Animal animal2) {
+
+		if(this.tamanioActual == animal2.tamanioActual){
+			return 0;
+		}else if(this.tamanioActual < animal2.tamanioActual){
+			return -1;
+		}else {
+			return 1;
+		}
+
+	}
+
+	public float getTamanioInicial() {
+		return tamanioInicial;
+	}
+
+	public void setTamanioInicial(float tamanioInicial) {
+		this.tamanioInicial = tamanioInicial;
+	}
+
+	public float getTamanioActual() {
+		return tamanioActual;
+	}
+
+	public void setTamanioActual(float tamanioActual) {
+		this.tamanioActual = tamanioActual;
+	}
+
 }

@@ -24,5 +24,7 @@ public abstract class Viviparo extends Animal {
 	public void setTiempoGestacion(int tiempoGestacion) {
 		this.tiempoGestacion = tiempoGestacion;
 	}
-
+	public boolean estaGestando(int tiempoDesdeConcepcion){
+		return(tiempoDesdeConcepcion <= tiempoGestacion);
+	}
 }
