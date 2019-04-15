@@ -1,15 +1,14 @@
 package ar.peninsula.valdes;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import ar.peninsula.valdes.animal.Animal;
 import ar.peninsula.valdes.animal.Delfin;
 import ar.peninsula.valdes.animal.Pinguino;
 import ar.peninsula.valdes.reproduccion.Oviparo;
 import ar.peninsula.valdes.reproduccion.Viviparo;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
 

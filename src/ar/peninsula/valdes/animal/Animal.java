@@ -28,8 +28,8 @@ public abstract class Animal implements Comparable<Animal> {
 
 	public abstract void calcularTamanio(int edadMeses);
 
-	public int getAnios(int edadMeses) {
-		return edadMeses / 12;
+	public float getAnios(int edadMeses) {
+		return edadMeses/12f;
 	}
 	
 	public int getPeriodoCrecimiento() {
